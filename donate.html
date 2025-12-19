@@ -1,117 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart of Jesus Foundation - Donate</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f4f8;
-            color: #333;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #007BFF;
-        }
-        input, select, button {
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        select, input[type="number"] {
-            width: 100%;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
-            border: none;
-            transition: background-color 0.3s;
-            width: 100%;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .donation-methods div {
-            margin-bottom: 15px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #e0e0e0;
-            margin-top: 40px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate | Heart of Jesus Foundation</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+        color: #333;
+    }
+    header {
+        background: #007BFF; /* Blue header */
+        color: #fff;
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: #007BFF; /* Blue headings */
+        margin-bottom: 10px;
+    }
+    p {
+        line-height: 1.6;
+    }
+    .donation-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fafafa;
+    }
+    .donation-box strong {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .highlight {
+        font-weight: bold;
+        color: #000;
+    }
+    .amount-input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin: 15px 0 25px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .donate-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        background: #007BFF; /* All buttons blue */
+        transition: 0.3s;
+    }
+    .donate-btn:hover {
+        opacity: 0.8;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #eee;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Heart of Jesus Foundation</h1>
-        <p>Donate and Make a Difference in a Child's Life</p>
-    </header>
 
-    <div class="container">
-        <section>
-            <h2>Support Children Today</h2>
-            <p>Your donation provides education, food, healthcare, and hope to children in our community. Every contribution matters!</p>
-        </section>
+<header>
+    <h1>Heart of Jesus Foundation</h1>
+    <p>Your donation brings hope, care, and a future to children in need</p>
+</header>
 
-        <section class="donation-methods">
-            <h2>Make a Donation</h2>
-            <label for="amount">Enter Donation Amount (UGX):</label><br>
-            <input type="number" id="amount" placeholder="Enter your amount" min="1">
+<div class="container">
 
-            <div>
-                <strong>Bank Transfer</strong><br>
-                SSEMUNTU ROBERT – Centenary Bank<br>
-                Account Number: 3205092199<br>
-                <button onclick="alert('Please transfer ' + document.getElementById('amount').value + ' UGX to 3205092199')">Donate via Bank</button>
-            </div>
+    <h2>Support Our Mission</h2>
+    <p>Your generosity helps provide education, healthcare, food, and protection to vulnerable children. Every contribution—big or small—makes a real difference.</p>
 
-            <div>
-                <strong>Mobile Money (MTN / Airtel Uganda)</strong><br>
-                SSEMUNTU ROBERT<br>
-                +256758443957<br>
-                <button onclick="alert('Please send ' + document.getElementById('amount').value + ' UGX via Mobile Money')">Donate via Mobile Money</button>
-            </div>
-        </section>
+    <h2>Donation Amount</h2>
+    <input type="number" class="amount-input" id="donation-amount" placeholder="Enter amount (UGX)" min="1">
 
-        <section>
-            <h2>Why Donate?</h2>
-            <ul>
-                <li>School supplies and educational support</li>
-                <li>Nutritious meals for children</li>
-                <li>Health and medical assistance</li>
-                <li>Community outreach programs</li>
-            </ul>
-        </section>
+    <h2>Donation Methods</h2>
 
-        <section>
-            <h2>Act Today – Make a Difference!</h2>
-            <p>Every child deserves a chance to thrive. Your generosity changes lives.</p>
-        </section>
+    <!-- Mobile Money -->
+    <div class="donation-box">
+        <strong>Mobile Money – Airtel Uganda</strong><br>
+        Name: <span class="highlight">Ssemuntu Robert</span><br>
+        Phone: <span class="highlight">0758 443 957</span><br>
+        Network: Airtel Money Uganda
+        <br><br>
+        <button class="donate-btn" onclick="alert('Please send ' + document.getElementById('donation-amount').value + ' UGX via Mobile Money to 0758443957')">
+            Donate via Mobile Money
+        </button>
     </div>
 
-    <footer>
-        &copy; 2025 Heart of Jesus Foundation. All Rights Reserved.
-    </footer>
+    <!-- Remitly -->
+    <div class="donation-box">
+        <strong>Remitly</strong><br>
+        Name: <span class="highlight">Ssemuntu Robert</span><br>
+        Phone: <span class="highlight">+256 758 443 957</span><br>
+        Service: Airtel Money Uganda
+        <br><br>
+        <a href="https://www.remitly.com/send?recipient=Ssemuntu+Robert&country=UG&amount=1" target="_blank" id="remitly-btn" class="donate-btn">Donate via Remitly</a>
+    </div>
+
+    <!-- Sendwave -->
+    <div class="donation-box">
+        <strong>Sendwave</strong><br>
+        Name: <span class="highlight">Ssemuntu Robert</span><br>
+        Phone: <span class="highlight">+256 758 443 957</span><br>
+        Network: Airtel Money Uganda
+        <br><br>
+        <a href="https://sendwave.com/" target="_blank" class="donate-btn">Donate via Sendwave</a>
+    </div>
+
+    <!-- PayPal -->
+    <div class="donation-box">
+        <strong>PayPal</strong><br>
+        Send to the PayPal account linked to: <span class="highlight">Ssemuntu Robert</span>
+        <br><br>
+        <a href="https://www.paypal.com/donate" target="_blank" class="donate-btn">Donate via PayPal</a>
+    </div>
+
+    <h2>Why Your Donation Matters</h2>
+    <ul>
+        <li>School fees, uniforms, and learning materials</li>
+        <li>Food and nutrition support</li>
+        <li>Medical care and health programs</li>
+        <li>Community outreach and child protection</li>
+    </ul>
+
+    <h2>Thank You for Your Kindness</h2>
+    <p>Your support changes lives and brings hope where it is needed most. Together, we can build a brighter future for every child.</p>
+
+</div>
+
+<footer>
+    &copy; 2025 Heart of Jesus Foundation. All Rights Reserved.
+</footer>
+
+<script>
+    // Update Remitly link with entered amount
+    const amountInput = document.getElementById('donation-amount');
+    const remitlyBtn = document.getElementById('remitly-btn');
+
+    amountInput.addEventListener('input', () => {
+        const amt = amountInput.value || 1;
+        remitlyBtn.href = `https://www.remitly.com/send?recipient=Ssemuntu+Robert&country=UG&amount=${amt}`;
+    });
+</script>
+
 </body>
 </html>
