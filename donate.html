@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart of Jesus Foundation - Donate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        select, input[type="number"] {
+            width: 100%;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .donation-methods div {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heart of Jesus Foundation</h1>
+        <p>Donate and Make a Difference in a Child's Life</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Support Children Today</h2>
+            <p>Your donation provides education, food, healthcare, and hope to children in our community. Every contribution matters!</p>
+        </section>
+
+        <section class="donation-methods">
+            <h2>Make a Donation</h2>
+            <label for="amount">Enter Donation Amount (UGX):</label><br>
+            <input type="number" id="amount" placeholder="Enter your amount" min="1">
+
+            <div>
+                <strong>Bank Transfer</strong><br>
+                Ssemuntu Robert – Centenary Bank<br>
+                Account Number: 3205092199<br>
+                <button onclick="alert('Please transfer ' + document.getElementById('amount').value + ' UGX to 3205092199')">Donate via Bank</button>
+            </div>
+
+            <div>
+                <strong>Mobile Money (MTN / Airtel Uganda)</strong><br>
+                +256758443957<br>
+                +256784209636<br>
+                <button onclick="alert('Please send ' + document.getElementById('amount').value + ' UGX via Mobile Money')">Donate via Mobile Money</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Why Donate?</h2>
+            <ul>
+                <li>School supplies and educational support</li>
+                <li>Nutritious meals for children</li>
+                <li>Health and medical assistance</li>
+                <li>Community outreach programs</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Act Today – Make a Difference!</h2>
+            <p>Every child deserves a chance to thrive. Your generosity changes lives.</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Heart of Jesus Foundation. All Rights Reserved.
+    </footer>
+</body>
+</html>
