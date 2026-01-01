@@ -1,0 +1,752 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Heart Of Jesus Foundation for child</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-4 text-center text-lg-start">
+                <a href="index.html">
+                   <img class="logo-top" src="images/sadaka-logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-8 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-phone-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Call Us</h6>
+                                <span class="text-white"><a href="tel:+256758443957">+256758443957 </a> </li></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-envelope-open text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Mail Us</h6>
+                                <span class="text-white"><a href="mailto:heartofjesusfoundationforchild@gmail.com">heartofjesusfoundation</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-map-marker-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Address</h6>
+                                <span class="text-white">Buvuma, Bukindye.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
+                <h4 class="d-lg-none m-0">Menu</h4>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav me-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="donation.html" class="nav-item nav-link">Donation</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-lg-flex ms-auto">
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.google.com/search?q=Heart+of+Jesus+foundation+for+children&sca_esv=f4ed0b1fee17cd81&rlz=1C1VDKB_enUG1144UG1144&sxsrf=AE3TifOIUsMfuW5bhIB_AhnByiaCW-LCDA%3A1766058778360&ei=GutDaYDcFciA9u8PuJXTsQI&ved=0ahUKEwiA0YvRiceRAxVIgP0HHbjKNCYQ4dUDCBE&uact=5&oq=Heart+of+Jesus+foundation+for+children&gs_lp=Egxnd3Mtd2l6LXNlcnAiJkhlYXJ0IG9mIEplc3VzIGZvdW5kYXRpb24gZm9yIGNoaWxkcmVuSPQlUMcHWNEhcAF4AJABAJgB4QKgAZoeqgEFMi04LjW4AQPIAQD4AQGYAg2gAtscwgIJEAAYsAMYBxgewgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICCxAAGLADGKIEGIkFwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQIRigAcICBxAhGKABGArCAgUQIRifBZgDAIgGAZAGCZIHBzEuMC43LjWgB_AjsgcFMi03LjW4B8UcwgcHMC41LjcuMcgHNoAIAA&sclient=gws-wiz-serp"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.facebook.com/p/Heart-of-Jesus-foundation-for-children-in-uganda-61570922365468/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.google.com/search?q=Heart+of+Jesus+foundation+for+children&sca_esv=f4ed0b1fee17cd81&rlz=1C1VDKB_enUG1144UG1144&sxsrf=AE3TifOIUsMfuW5bhIB_AhnByiaCW-LCDA%3A1766058778360&ei=GutDaYDcFciA9u8PuJXTsQI&ved=0ahUKEwiA0YvRiceRAxVIgP0HHbjKNCYQ4dUDCBE&uact=5&oq=Heart+of+Jesus+foundation+for+children&gs_lp=Egxnd3Mtd2l6LXNlcnAiJkhlYXJ0IG9mIEplc3VzIGZvdW5kYXRpb24gZm9yIGNoaWxkcmVuSPQlUMcHWNEhcAF4AJABAJgB4QKgAZoeqgEFMi04LjW4AQPIAQD4AQGYAg2gAtscwgIJEAAYsAMYBxgewgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICCxAAGLADGKIEGIkFwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQIRigAcICBxAhGKABGArCAgUQIRifBZgDAIgGAZAGCZIHBzEuMC43LjWgB_AjsgcFMi03LjW4B8UcwgcHMC41LjcuMcgHNoAIAA&sclient=gws-wiz-serp"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-text">
+                            <h2 class="display-1 text-uppercase mb-3">Heart of Jesus foundation for child</h2>
+                            <p class="fs-5 mb-5">We believe in creating opportunities and empowering communities through
+                                education, healthcare, and sustainable development.</p>
+                            <div class="d-flex">
+                                <a class="btn btn-primary py-3 px-4 me-3" href="donation.html">Donate Now</a>
+                                <a class="btn btn-secondary py-3 px-4" href="contact.html">Join Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="carousel-img">
+                            <img class="w-100" src="images/carousel-1.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-text">
+                            <h1 class="display-1 text-uppercase mb-3">Heart of Jesus foundation for child</h1>
+                            <p class="fs-5 mb-5">No one should go to bed hungry. Your support helps us bring smiles,
+                                hope, and a brighter future to those in need.</p>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary py-3 px-4 me-3" href="donation.html">Donate Now</a>
+                                <a class="btn btn-secondary py-3 px-4" href="contact.html">Join Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="carousel-img">
+                            <img class="w-100" src="images/carousel-2.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Start -->
+    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-11">
+                    <div class="h-100 py-5 d-flex align-items-center">
+                        
+                        <h3 class="ms-5 mb-0">Together, we can build a world where everyone has the chance to thrive.
+                        </h3>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1">
+                    <div class="h-100 w-100 bg-secondary d-flex align-items-center justify-content-center">
+                        <span class="text-white" style="transform: rotate(-90deg);">Scroll Down</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">GENIUS DEVELOPERS UGANDA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen="" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="about-img">
+                        <img class="img-fluid w-100" src="images/about.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Heart of Jesus Foundation</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">Heart of Jesus foundation is a 5years-old Oraganisation located in Buvuma, 
+                        Bukindye village in Uganda and it has been working tirelessly to support.</p>
+                    <div class="row g-4 pt-2">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="h-100">
+                                <h3>Our Mission</h3>
+                                <p>Our mission is to provide comprehensive support and resources to children,empowering them with the skills.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>No one should go to
+                                    bed hungry.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>We spread kindness and
+                                    support.</p>
+                                <p class="text-dark mb-0"><i class="fa fa-check text-primary me-2"></i>We can change
+                                    someone’s life.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 bg-primary p-4 text-center">
+                                <p class="fs-5 text-dark">Through your donations, we spread kindness and support to
+                                    children and families.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="donation.html">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="service-title">
+                        <h1 class="display-6 mb-4">What We Do for Those in Need.</h1>
+                        <p class="fs-5 mb-0">We work to bring smiles, hope, and a brighter future to those in need.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 col-xl-9">
+                    <div class="row g-5">
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-droplet fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Pure Water</h3>
+                                <p class="mb-2">We’re creating programs that address urgent needs while fostering
+                                    long-term solutions for sustainable change.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-hospital fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Health Care</h3>
+                                <p class="mb-2">We’re creating programs that address urgent needs while fostering
+                                    long-term solutions for sustainable change.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-hands-holding-child fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Social Care</h3>
+                                <p class="mb-2">We’re creating programs that address urgent needs while fostering
+                                    long-term solutions for sustainable change.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-bowl-food fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Healthy Food</h3>
+                                <p class="mb-2">We’re creating programs that address urgent needs while fostering
+                                    long-term solutions for sustainable change.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-school-flag fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Primary Education</h3>
+                                <p class="mb-2">We’re creating programs that address urgent needs while fostering
+                                    long-term solutions for sustainable change.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-home fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Residence Facilities</h3>
+                                <p class="mb-2">We’re creating programs that address urgent needs while fostering
+                                    long-term solutions for sustainable change.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4 h-100">
+                                    <i class="fa fa-users fa-3x text-secondary mb-3"></i>
+                                    <span class="text-dark"><h3>Unity Promotion</h3></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4 h-100">
+                                    <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                    <span class="text-white"><h3>Loyality</h3></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4 h-100">
+                                    <i class="fa fa-list-check fa-3x text-primary mb-3"></i>
+                                    <span class="text-white"><h3>Verified</h3></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4 h-100">
+                                    <i class="fa fa-comments fa-3x text-secondary mb-3"></i>
+                                    <span class="text-dark"><h3>Highly Reviewed</h3></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Reasons Why People Choose Us!</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">Heart of Jesus Foundation is dedicated to supporting children and 
+                        families in our community. We provide education, nutrition, and empowerment
+                         programs designed to ensure every child has the opportunity to thrive.</p>
+                    <p class="text-dark wow fadeIn" data-wow-delay="0.4s"><i class="fa fa-check text-primary me-2"></i>Your support is valuable</p>
+                    <p class="text-dark wow fadeIn" data-wow-delay="0.5s"><i class="fa fa-check text-primary me-2"></i>Save the future, save a child</p>
+                    <p class="text-dark wow fadeIn" data-wow-delay="0.6s"><i class="fa fa-check text-primary me-2"></i>We care about others</p>
+                    <div class="d-flex mt-4 wow fadeIn" data-wow-delay="0.7s">
+                        <a class="btn btn-primary py-3 px-4 me-3" href="donation.html">Donate Now</a>
+                        <a class="btn btn-secondary py-3 px-4" href="contact.html">Join Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    
+    <!-- Banner Start -->
+    <div class="container-fluid banner py-5">
+        <div class="container">
+            <div class="banner-inner bg-light p-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 py-5 text-center">
+                        <h1 class="display-6 wow fadeIn" data-wow-delay="0.3s">Our Door Are Always Open to More People
+                            Who Want to Support Each Others!</h1>
+                        <p class="fs-5 mb-4 wow fadeIn" data-wow-delay="0.5s">Through your donations and volunteer work,
+                            we spread kindness and support to children, families, and communities struggling to find
+                            stability.</p>
+                        <div class="d-flex justify-content-center wow fadeIn" data-wow-delay="0.7s">
+                            <a class="btn btn-primary py-3 px-4 me-3" href="donation.html">Donate Now</a>
+                            <a class="btn btn-secondary py-3 px-4" href="contact.html">Join Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Events</p>
+                <h1 class="display-6 mb-4">Be Part of this Foundation</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="images/event-1.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Education Program</a>
+                        <p>We recognize that lack of education and skills is among the biggest 
+                            barriers preventing children from reaching their potential..</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>8:00 AM - 6:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>May 2025</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>Buvuma, Bukindye.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="images/event-2.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Nutrition Awareness</a>
+                        <p>Educated families on balanced diets and healthy meals that the children need 
+                            to help them overcome mulnutritional diseases.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>8:00 AM - 6:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>Feb 2025</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>Buvuma, Bukindye</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="images/event-3.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Culture Festival</a>
+                        <p>Through your donations and volunteer work, we Showcased children’s creative talents 
+                            through music, painting, and performances..</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>10:00 AM - 4:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>Jan 2025</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>Buvuma, Bukindye</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+
+    <!-- Donate Start -->
+    <div class="container-fluid donate py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-7 donate-text bg-light py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column justify-content-center h-100 p-5 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 mb-4">Let's Donate to Needy People for Better Lives</h1>
+                        <p class="fs-5 mb-0">Through your donations, we spread kindness and support to children,
+                            families, and communities struggling to find stability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 donate-form bg-primary py-5 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+                                        <label class="btn btn-light" for="btnradio1">$10</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio2">$20</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio3">$30</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio4">$40</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio5">$50</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-secondary py-3 w-100" type="submit" href="donation.html">Donate
+                                        Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Donate End -->
+
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="testimonial-title">
+                        <h1 class="display-6 mb-4">What People Say About Our Activities.</h1>
+                        <p class="fs-5 mb-0">We work to bring smiles, hope, and a brighter future to those in need.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 col-xl-9">
+                    <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="images/testimonial-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <div class="mb-2">
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5">Education is the foundation of change. By funding schools,
+                                            scholarships, and training programs, we can help children and adults unlock
+                                            their potential for a better future.</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-lg-square bg-light text-secondary flex-shrink-0">
+                                                <i class="fa fa-quote-right fa-2x"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h5 class="mb-0">Elijah Kitondekiggya</h5>
+                                                <span>CEO, Genius Developers Uganda</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="images/testimonial-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <div class="mb-2">
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5">Every hand extended in kindness brings us closer to a world free
+                                            from suffering. Be part of a global movement dedicated to building a future
+                                            where equality and compassion thrive.</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-lg-square bg-light text-secondary flex-shrink-0">
+                                                <i class="fa fa-quote-right fa-2x"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h5 class="mb-0">Atukunda Favour</h5>
+                                                <span>ASST. CEO, Genius Developers Uganda</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="images/testimonial-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <div class="mb-2">
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5">Love and compassion have the power to heal. Through your
+                                            donations and volunteer work, we can spread kindness and support to
+                                            children, families, and communities struggling to find stability.</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-lg-square bg-light text-secondary flex-shrink-0">
+                                                <i class="fa fa-quote-right fa-2x"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h5 class="mb-0">Becky Kitonde</h5>
+                                                <span>CEO, Becky Home Modern</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Subscribe the Newsletter</h1>
+                    <div class="position-relative w-100 mb-2">
+                        <input class="form-control border-0 w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 60px;">
+                        <button type="button" class="btn btn-lg-square shadow-none position-absolute top-0 end-0 mt-2 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <p class="mb-0">Don't worry, we won't spam you with emails.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><a href="buvuma bukindye">Buvuma, Bukindye</a></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+256758443957">+256758443957 </a> </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:heartofjesusfoundationforchild@gmail.com">heartofjesusfoundation</a></p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary me-2" href="https://www.google.com/search?q=Heart+of+Jesus+foundation+for+children&sca_esv=f4ed0b1fee17cd81&rlz=1C1VDKB_enUG1144UG1144&sxsrf=AE3TifOIUsMfuW5bhIB_AhnByiaCW-LCDA%3A1766058778360&ei=GutDaYDcFciA9u8PuJXTsQI&ved=0ahUKEwiA0YvRiceRAxVIgP0HHbjKNCYQ4dUDCBE&uact=5&oq=Heart+of+Jesus+foundation+for+children&gs_lp=Egxnd3Mtd2l6LXNlcnAiJkhlYXJ0IG9mIEplc3VzIGZvdW5kYXRpb24gZm9yIGNoaWxkcmVuSPQlUMcHWNEhcAF4AJABAJgB4QKgAZoeqgEFMi04LjW4AQPIAQD4AQGYAg2gAtscwgIJEAAYsAMYBxgewgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICCxAAGLADGKIEGIkFwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQIRigAcICBxAhGKABGArCAgUQIRifBZgDAIgGAZAGCZIHBzEuMC43LjWgB_AjsgcFMi03LjW4B8UcwgcHMC41LjcuMcgHNoAIAA&sclient=gws-wiz-serp"><i class="fab fa-x-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.google.com/search?q=Heart+of+Jesus+foundation+for+children&sca_esv=f4ed0b1fee17cd81&rlz=1C1VDKB_enUG1144UG1144&sxsrf=AE3TifOIUsMfuW5bhIB_AhnByiaCW-LCDA%3A1766058778360&ei=GutDaYDcFciA9u8PuJXTsQI&ved=0ahUKEwiA0YvRiceRAxVIgP0HHbjKNCYQ4dUDCBE&uact=5&oq=Heart+of+Jesus+foundation+for+children&gs_lp=Egxnd3Mtd2l6LXNlcnAiJkhlYXJ0IG9mIEplc3VzIGZvdW5kYXRpb24gZm9yIGNoaWxkcmVuSPQlUMcHWNEhcAF4AJABAJgB4QKgAZoeqgEFMi04LjW4AQPIAQD4AQGYAg2gAtscwgIJEAAYsAMYBxgewgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICCxAAGLADGKIEGIkFwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQIRigAcICBxAhGKABGArCAgUQIRifBZgDAIgGAZAGCZIHBzEuMC43LjWgB_AjsgcFMi03LjW4B8UcwgcHMC41LjcuMcgHNoAIAA&sclient=gws-wiz-serp"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.google.com/search?q=Heart+of+Jesus+foundation+for+children&sca_esv=f4ed0b1fee17cd81&rlz=1C1VDKB_enUG1144UG1144&sxsrf=AE3TifOIUsMfuW5bhIB_AhnByiaCW-LCDA%3A1766058778360&ei=GutDaYDcFciA9u8PuJXTsQI&ved=0ahUKEwiA0YvRiceRAxVIgP0HHbjKNCYQ4dUDCBE&uact=5&oq=Heart+of+Jesus+foundation+for+children&gs_lp=Egxnd3Mtd2l6LXNlcnAiJkhlYXJ0IG9mIEplc3VzIGZvdW5kYXRpb24gZm9yIGNoaWxkcmVuSPQlUMcHWNEhcAF4AJABAJgB4QKgAZoeqgEFMi04LjW4AQPIAQD4AQGYAg2gAtscwgIJEAAYsAMYBxgewgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICCxAAGLADGKIEGIkFwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQIRigAcICBxAhGKABGArCAgUQIRifBZgDAIgGAZAGCZIHBzEuMC43LjWgB_AjsgcFMi03LjW4B8UcwgcHMC41LjcuMcgHNoAIAA&sclient=gws-wiz-serp"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.google.com/search?q=Heart+of+Jesus+foundation+for+children&sca_esv=f4ed0b1fee17cd81&rlz=1C1VDKB_enUG1144UG1144&sxsrf=AE3TifOIUsMfuW5bhIB_AhnByiaCW-LCDA%3A1766058778360&ei=GutDaYDcFciA9u8PuJXTsQI&ved=0ahUKEwiA0YvRiceRAxVIgP0HHbjKNCYQ4dUDCBE&uact=5&oq=Heart+of+Jesus+foundation+for+children&gs_lp=Egxnd3Mtd2l6LXNlcnAiJkhlYXJ0IG9mIEplc3VzIGZvdW5kYXRpb24gZm9yIGNoaWxkcmVuSPQlUMcHWNEhcAF4AJABAJgB4QKgAZoeqgEFMi04LjW4AQPIAQD4AQGYAg2gAtscwgIJEAAYsAMYBxgewgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICCxAAGLADGKIEGIkFwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQABjvBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQIRigAcICBxAhGKABGArCAgUQIRifBZgDAIgGAZAGCZIHBzEuMC43LjWgB_AjsgcFMi03LjW4B8UcwgcHMC41LjcuMcgHNoAIAA&sclient=gws-wiz-serp"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="donation.html">Support Us</a>
+                    <a class="btn btn-link" href="gallery.html">Gallery</a>
+                    <a class="btn btn-link" href="tel:+256758443957">Call Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="images/gallery-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="images/gallery-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="images/gallery-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="images/gallery-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="images/gallery-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="images/gallery-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright pt-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="fw-semi-bold" href="#!">Heart of Jesus</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Design <a class="fw-semi-bold" href="https://omunenevevo.github.io/gdu/">GENIUS DEVELOPERS UGANDA</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body></html>
